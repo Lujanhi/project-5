@@ -34,7 +34,11 @@ Promise.all([func1, func2])
     console.error(error);
   }) */
 
-// 
+//    //.then(response => console.log(response)) // checks response
+   //.then(data => console.log(data))
+   //.then(data => console.log(data.results)) // checks data
+   
+///////////////////////// Fetch API ////////////////
 
 // Global variables that are not assign yet.
 
@@ -42,11 +46,7 @@ let data;
 let person;
 let a;
 
-   // Fetch API Asynchronous Programming Interface
-
-   //.then(response => console.log(response)) // checks response
-   //.then(data => console.log(data))
-   //.then(data => console.log(data.results)) // checks data
+  
 
 fetch('https://randomuser.me/api/?results=12&nat=us') 
    .then(response => response.json())
