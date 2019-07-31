@@ -42,13 +42,14 @@ let data;
 let person;
 let a;
 
-// Fetch API Asynchronous Programming Interface
+   // Fetch API Asynchronous Programming Interface
 
-fetch('https://randomuser.me/api/?results=12&nat=us') 
-   .then(response => response.json())
    //.then(response => console.log(response)) // checks response
    //.then(data => console.log(data))
    //.then(data => console.log(data.results)) // checks data
+
+fetch('https://randomuser.me/api/?results=12&nat=us') 
+   .then(response => response.json())
    .then(function (data) {
 
     //https://www.javatpoint.com/json-array //JSON array represents ordered list of values. JSON array can store multiple values. It can store string, number, boolean or object in JSON array.
